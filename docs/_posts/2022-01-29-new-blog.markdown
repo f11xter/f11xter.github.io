@@ -1,0 +1,12 @@
+---
+title:  "New blog!"
+date:   2022-01-29 22:00:00 +0000
+tags: meta
+---
+Welcome to my shiny new blog!
+
+I plan to use this space to discuss projects I'm working on, as well as any thoughts I have about ... anything.
+
+Expect posts about coding projects past, present and potential, analysis of music I've been listening to, and devlogs of my own music production.
+
+This site is built with [GitHub Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/), and is themed by [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes). Its source code can be found [here](https://github.com/f11xter/f11xter.github.io).
