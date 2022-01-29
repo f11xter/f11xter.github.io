@@ -18,7 +18,7 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark"
 locale                   : "en-GB"
 title                    : "f11xter's blog"
 title_separator          : "-"
-subtitle                 : Thoughts of an individual.
+subtitle                 : thoughts of an individual
 name                     : "f11xter"
 description              : "f11xter's blog"
 url                      : https://f11xter.github.io
