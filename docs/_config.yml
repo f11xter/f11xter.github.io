@@ -24,7 +24,7 @@ description              : "f11xter's blog"
 url                      : https://f11xter.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "f11xter/f11xter.github.io"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+teaser                   : "assets/images/fireworks.jpg"
 logo                     : "assets/images/apple-touch-icon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
@@ -102,8 +102,8 @@ analytics:
 
 # Site Author
 author:
-  name             : "f11xter"
-  avatar           : 
+  name             : "Felix Waller"
+  avatar           : "assets/images/headshot2.jpg"
   bio              : "programmer and musician"
   location         : "UK"
   email            : "felixwaller.public@gmail.com"
@@ -216,7 +216,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 5 # number of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
