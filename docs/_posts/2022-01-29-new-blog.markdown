@@ -1,6 +1,8 @@
 ---
 title:  "New blog!"
 date:   2022-01-29 22:00:00 +0000
+header:
+    teaser:  "/assets/images/fireworks.jpg"
 tags: meta
 ---
 Welcome to my shiny new blog!
