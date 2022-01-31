@@ -7,7 +7,7 @@ tags: programming games universit
 excerpt: "2 sentence horror: I had to make a game. It had to use Tkinter."
 ---
 
-As part of studying computer science at university, we were tasked with creating a game using Python. There were various constraints such as: it had to involve collision, images, a scoreboard etc. However, none were quite so ~~unnecessarily frustrating and poorly thought through~~ limiting as the fact that sensible library choices like Pygame were banned, and instead we were forced to use Tkinter.
+As part of studying computer science at university, we were tasked with creating a game using Python. There were various constraints such as: it had to involve collision, images, a scoreboard etc. However, none were quite so ~~acutely frustrating~~ limiting as the fact that sensible library choices like Pygame were banned, and instead we were forced to use Tkinter.
 
 Now I have nothing against Tkinter in principle, but creating a game with it was painful at best. Trying to shoe-horn its interface into even the most basic of games (it was designed for creating GUIs), led to the classic uni all-nighter on the Friday it was due (though I don't claim full responsibility for leaving it to the last minute - I was playing in the pit band for the musical that week, which sucked up at least 4 hours of every day).
 
