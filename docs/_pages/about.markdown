@@ -14,10 +14,5 @@ More info can be found over on my [music website](https://felixwallerdev.wixsite
 
 I'm mainly interested in software development but am always eager to get stuck into other areas.
 
-### Current projects:
-- [Discord bot](https://github.com/whimsicalities/mcsoc-bot/tree/dev) for the the University of Manchester Minecraft Society
-- [This website](https://github.com/f11xter/f11xter.github.io)
-- CivBuilder - an idle game built with Unity
-
 ### Languages: 
 Dart, Flutter, Python, C#, JavaScript, HTML, CSS
