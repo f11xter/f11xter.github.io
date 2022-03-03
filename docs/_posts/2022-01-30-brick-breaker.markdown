@@ -2,8 +2,8 @@
 title:  "Brick Breaker Python Game"
 date:   2022-01-30 22:00:00 +0000
 header:
-    teaser: "/assets/images/brick_breaker.png"
-tags: programming games universit
+    teaser: "/assets/images/2022-01-30-brick-breaker/brick_breaker.png"
+tags: programming games university
 excerpt: "2 sentence horror: I had to make a game. It had to use Tkinter."
 ---
 
@@ -14,7 +14,7 @@ Now I have nothing against Tkinter in principle, but creating a game with it was
 At the end of it though, I've ended up with a game I'm proud of: [Brick Breaker Star Collector](https://github.com/f11xter/brick_breaker). A simple spin on the classic brick breaker game I used to play on my Nokia flip back in the good old days of 2014, the objective of each level is to negotiate your ball around the bricks to collect the 3 gold stars in the shortest time possible.
 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/brick_breaker.png" alt="Level 1 gameplay">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2022-01-30-brick-breaker/brick_breaker.png" alt="Level 1 gameplay">
   <figcaption>Level 1 gameplay</figcaption>
 </figure> 
 
@@ -45,7 +45,7 @@ Pressing `ctrl + p` will make the ball ignore collisions, phasing through bricks
 Pressing `ctrl + i` will make the ball invincible, allowing it to bounce off the bottom without losing any lives.
 
 <figure>
-  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/brick_breaker_cheats.png" alt="Cheats">
+  <img src="{{ site.url }}{{ site.baseurl }}/assets/images/2022-01-30-brick-breaker/brick_breaker_cheats.png" alt="Cheats">
   <figcaption>Lengthen, Phantom, Invicible cheats active</figcaption>
 </figure> 
 

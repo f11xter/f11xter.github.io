@@ -25,7 +25,7 @@ url                      : https://f11xter.github.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "f11xter/f11xter.github.io"
 teaser                   : "assets/images/fireworks.jpg"
-logo                     : "assets/images/apple-touch-icon.png"
+logo                     : "assets/images/favicons/apple-touch-icon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
