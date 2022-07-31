@@ -5,7 +5,6 @@ header:
     teaser: "/assets/images/2022-03-03-celebrate/celebrate-logo.png"
 tags: programming web mental_health
 excerpt: "For when you're having a bad day."
-permalink: "/celebrate-blog" # default /celebrate is reserved for the celebrate website
 ---
 <style>
 @keyframes flash {
