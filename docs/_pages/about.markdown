@@ -5,14 +5,17 @@ author_profile: true
 permalink: /about/
 ---
 
-Hey there!
+**Hey there!**
 
-I'm a 19-year-old programmer in my first year studying Computer Science at [The University of Manchester](https://www.manchester.ac.uk/).
+I’m a 19-year-old programmer in my second year studying Computer Science at The University of Manchester.
 
-I'm also a 19-year-old cellist studying with [Simon Turner](https://simonturnercello.wordpress.com/). 
-More info can be found over on my [music website](https://felixwallerdev.wixsite.com/strings) for now.
+I’m also a 19-year-old cellist studying with [Simon Turner](https://simonturnercello.wordpress.com/).
 
-I'm mainly interested in software development but am always eager to get stuck into other areas.
+Check out some of my [projects](https://f11xter.github.io/projects).
 
-### Languages: 
-Dart, Flutter, Python, C#, JavaScript, HTML, CSS
+## Tools I use:
+JavaScript, Vue, React, HTML, CSS, Python, Unity, C#, Flutter, Dart, Java 
+
+## About my logo:
+My logo fuses together my two main hobbies: music and coding. The concept was to combine the `C:\>` prompt found in cmd.exe with the bass clef that I read music in as a cellist.
+
