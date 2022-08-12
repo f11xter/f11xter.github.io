@@ -1,9 +1,9 @@
 ---
 title:  "Animal Astronauts Devlog #1"
-date:   2022-08-02 08:00:00 +0000
+date:   2022-08-10 08:00:00 +0000
 header:
     teaser: "/assets/images/animal-astronauts-devlog/logo.jpg"
-tags: animal_astronauts programming games
+tags: animal-astronauts programming games
 excerpt: "You've got to start somewhere, I guess."
 ---
 

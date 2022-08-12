@@ -1,9 +1,9 @@
 ---
 title:  "Animal Astronauts Devlog #3"
-date:   2022-08-04 08:00:00 +0000
+date:   2022-08-20 08:00:00 +0000
 header:
     teaser: "/assets/images/animal-astronauts-devlog/logo.jpg"
-tags: animal_astronauts programming games
+tags: animal-astronauts programming games
 excerpt: "I can't live like this."
 ---
 
