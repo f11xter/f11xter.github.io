@@ -16,9 +16,9 @@ Allen spent "many weeks fine tuning and curating" short text snippets that he fe
     <figcaption>Theatre d'Opera Spatial - Allen's winning entry</figcaption>
 </figure>
 
-Despite entering the digital art category, many internet users appear to feel he somehow cheated by not entering "his own art". I can only conclude that they've never attempted to make such an ambitious piece themselves. The patience and care required is clearly above people who can't even find the time to consider how ridiculous their position sounds.
+Despite entering the digital art category, many internet users appear to feel he somehow cheated by not entering "his own art". I can only conclude that they've never attempted to make such an ambitious piece themselves; in my short time experimenting with the DALL-E 2 beta I've found that the most minor change can have a fundamental effect on the program's output, making the creation of pre-conceived art very difficult.
 
-At its core, the main objection raised was that Allen won too easily: there was no motor skill involved, he just had to write a few words on a keyboard. As has been pointed out many times however, this sounds remarkably similar to the original concerns about photography: "you just point and click". 
+At its core, the main objection people raised was that Allen won too easily: there was no motor skill involved, he just had to write a few words on a keyboard. As has been pointed out many times however, this sounds remarkably similar to the original concerns about photography: "you just point and click". 
 
 > One day, Jack's boiler stopped working, so he called a mechanic. The mechanic arrived, inspected the boiler for a while then went back to his car. Soon after, he returned with a hammer and proceeded to give the boiler a good whack.
 >
@@ -30,6 +30,6 @@ At its core, the main objection raised was that Allen won too easily: there was 
 
 That's one of my dad's favourite anecdotes. The point it makes is that neither the tool nor the action is important, rather the knowledge of which action and which tool are best suited for the particular job at hand.
 
-Allen had an artistic vision that he used his experience with the Midjourney AI to realise. The fact that he used one tool over another is irrelevant. Saying otherwise would be like claiming an artist's work was somehow less worthy than another's because they made a sculpture instead of a watercolour. Maybe those pieces shouldn't be competing with each other. Maybe you don't like the watercolour. Maybe you saw the sculpture and exclaimed "I could've done that!" despite knowing that, as always, what matters is that you didn't.
+Allen had an artistic vision that he used his experience with the Midjourney AI to realise. The fact that he used one tool over another is irrelevant. To say otherwise would be like claiming an artist's work was somehow less worthy than another's because they made a sculpture instead of a watercolour. Maybe those pieces shouldn't be competing with each other. Maybe you don't like the watercolour. Maybe you saw the sculpture and exclaimed, "I could've done that!" despite knowing that, as always, what matters is that you didn't.
 
-Shut up and let the artists make their art.
+Just let the artists make their art.
