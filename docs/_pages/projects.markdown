@@ -7,7 +7,6 @@ permalink: /projects
 ## Released:
 - [This website](https://f11xter.github.io/) ([source](https://github.com/f11xter/f11xter.github.io))
 - [Celebrate!](https://f11xter.github.io/celebrate) ([source](https://github.com/f11xter/celebrate)) - encouragement for your achievements, no matter how small
-- [Hush Clan's website](https://hushclan.com) - an ongoing revamp
 - [Discord bot](https://github.com/whimsicalities/mcsoc-bot/tree/dev) for the University of Manchester Minecraft Society
 - [Brickbreaker](https://github.com/f11xter/brick_breaker) - a Python game completed for uni
 - [it might end](https://f11xter.github.io/it-might-end) - it might end
