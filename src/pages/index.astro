@@ -1,9 +1,56 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+import BlogSummary from "@components/BlogSummary.astro";
+import Layout from "@layouts/Layout.astro";
+import ProjectSummary from "@components/ProjectSummary.astro";
+import Socials from "@components/Socials.astro";
+
+const posts = await getCollection("blog");
+const projects = await getCollection("projects", ({ data }) => data.featured);
 ---
 
-<Layout title="f11xter">
-</Layout>
+<Layout>
+  <main class="flow">
+    <h2 class="letter-spaced">about</h2>
+    <hr />
 
-<style>
-</style>
+    <p>
+      Cupidatat mollit est minim irure occaecat id velit eiusmod nulla eu velit
+      quis dolor. Eiusmod labore esse fugiat nisi voluptate veniam deserunt
+      culpa. Incididunt veniam anim aliqua duis consequat aliquip exercitation
+      minim. Sint sit in officia anim occaecat culpa Lorem ullamco qui aliqua
+      nostrud nulla amet. Laborum est eiusmod exercitation cupidatat sit laboris
+      amet nulla aute commodo.
+    </p>
+    <p>
+      Proident enim nostrud excepteur laborum nisi cupidatat nostrud. Mollit
+      deserunt excepteur incididunt laborum minim do dolore commodo adipisicing
+      minim aliquip eiusmod. Esse ullamco sint ut voluptate veniam eiusmod
+      pariatur ullamco ipsum. Proident fugiat proident culpa aute occaecat sit
+      id fugiat cupidatat nulla laboris. Ea sit tempor quis consequat in duis
+      anim ex. Qui non ea aliquip incididunt incididunt exercitation. Labore est
+      officia occaecat veniam proident minim consectetur nisi.
+    </p>
+
+    <Socials />
+
+    <h2 class="letter-spaced">featured projects</h2>
+    <hr />
+
+    {projects.map((project) => <ProjectSummary project={project} />)}
+
+    <a href="/projects">more projects</a>
+
+    <h2 class="letter-spaced">blog</h2>
+    <hr />
+
+    {
+      posts
+        .slice(0, 3)
+        .map((post) => <BlogSummary blog={post} headingAs={"h3"} />)
+    }
+
+    <a href="/blog">see more</a>
+  </main>
+</Layout>

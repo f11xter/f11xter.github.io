@@ -1,6 +1,8 @@
 ---
-export interface Props {
-	title: string;
+import "@assets/main.css";
+
+interface Props {
+	title?: string;
 }
 
 const { title } = Astro.props;
@@ -9,18 +11,46 @@ const { title } = Astro.props;
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<title>{title}</title>
+		<title>f11xter{title && " · " + title}</title>
 
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&family=Manrope:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
 	</head>
 
 	<body>
+		<header class="flow">
+			<p
+				class="heading letter-spaced"
+				style={{
+					display: "flex",
+					alignItems: "center",
+					fontSize: "2.5em",
+					lineHeight: "1",
+					marginBlockStart: "0",
+				}}
+			>
+				<span style={{ fontSize: "2.5em", fontWeight: "200" }}>f</span>
+				<span style={{ fontWeight: "300" }}>elix waller</span>
+			</p>
+
+			<p>programmer & musician</p>
+
+			<nav aria-label="site navigation">
+				<a href="/">home</a> &middot;
+				<a href="/projects/">projects</a> &middot;
+				<a href="/blog/">blog</a>
+			</nav>
+		</header>
+
 		<slot />
 	</body>
 </html>
-
-<style is:global>
-</style>

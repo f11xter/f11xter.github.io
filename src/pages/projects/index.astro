@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content";
+import Project from "@components/Project.astro";
+import Layout from "@layouts/Layout.astro";
+
+const projects = await getCollection("projects");
+---
+
+<Layout title="projects">
+  <main class="flow">
+    <h1 class="letter-spaced">projects</h1>
+    <hr />
+
+    {projects.map((project) => <Project project={project} />)}
+  </main>
+</Layout>

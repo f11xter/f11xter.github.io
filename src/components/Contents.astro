@@ -1,0 +1,71 @@
+---
+import type { MarkdownHeading } from "astro";
+import Contents from "@components/Contents.astro";
+
+interface Props {
+  headings: MarkdownHeading[];
+}
+
+// flat array of headings with depth values
+const { headings } = Astro.props;
+
+// enables nesting
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+  children: MarkdownHeading[];
+}
+
+// list of headings and their children
+const nested: Heading[] = [];
+
+// assumes correct heading use
+// resilient to misuse
+for (const h of headings) {
+  // if first heading
+  // or base-level heading
+  // push to list of headings
+  if (nested.length === 0 || h.depth === 2) {
+    nested.push({
+      depth: h.depth,
+      slug: h.slug,
+      text: h.text,
+      children: [],
+    });
+  }
+
+  // otherwise reduce depth by 1 for recursive call
+  // and push to most recent base-level heading's child array
+  else {
+    h.depth--;
+    nested[nested.length - 1].children.push(h);
+  }
+}
+---
+
+{
+  nested.length > 0 && (
+    <ul role="list">
+      {nested.map((h) => (
+        <li>
+          <a href={"#" + h.slug}>{h.text}</a>
+
+          <Contents headings={h.children} />
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+<style>
+  ul {
+    list-style-type: none;
+    margin-block: 0;
+    padding-inline-start: 1em;
+  }
+
+  li {
+    margin-block-start: 0.5em;
+  }
+</style>

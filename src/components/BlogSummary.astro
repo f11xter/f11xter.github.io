@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from "astro:content";
+import type { HTMLTag } from "astro/types";
+import { formatDate } from "@scripts/formatDate";
+
+interface Props {
+  blog: CollectionEntry<"blog">;
+  headingAs: HTMLTag;
+  style?: object;
+}
+
+const { blog, headingAs: Element, style } = Astro.props;
+---
+
+<div class="flow" style={style}>
+  <Element class="heading">
+    <a href={"/blog/" + blog.slug}>{blog.data.title}</a>
+  </Element>
+
+  <p>{formatDate(blog.data.published)}</p>
+
+  <p>&gt; {blog.data.excerpt}</p>
+</div>

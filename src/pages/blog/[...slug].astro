@@ -1,0 +1,47 @@
+---
+import { CollectionEntry, getCollection } from "astro:content";
+import Contents from "@components/Contents.astro";
+import Layout from "@layouts/Layout.astro";
+import { formatDate } from "@scripts/formatDate";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+
+const { Content: Body, headings } = await post.render();
+---
+
+<Layout title={post.data.title}>
+  <main>
+    <article class="flow">
+      <h1>{post.data.title}</h1>
+      <hr />
+
+      <p>{formatDate(post.data.published)}</p>
+
+      {
+        post.data.contents && (
+          <>
+            <h2 id="contents">contents</h2>
+            <nav aria-labelledby="contents">
+              <Contents headings={headings} />
+            </nav>
+          </>
+        )
+      }
+
+      <Body />
+    </article>
+  </main>
+</Layout>

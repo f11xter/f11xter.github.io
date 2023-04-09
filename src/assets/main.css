@@ -1,0 +1,108 @@
+:root {
+  --black: hsl(0 0% 5%);
+  --grey-30: hsl(0 0% 30%);
+  --grey-70: hsl(0 0% 70%);
+  --white: hsl(0 0% 90%);
+
+  --bg: var(--white);
+  --border: var(--grey-70);
+  --muted: var(--grey-30);
+  --text: var(--black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: var(--black);
+    --border: var(--grey-30);
+    --muted: var(--grey-70);
+    --text: var(--white);
+  }
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: 1rem 0.5rem;
+
+  color: var(--text);
+  background-color: var(--bg);
+
+  font-family: "Manrope", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+p,
+hr {
+  margin-block: 0;
+}
+
+hr {
+  border: none;
+  border-block-start: 1px solid var(--border);
+}
+
+a {
+  display: inline-block;
+
+  color: var(--text);
+  font-weight: 500;
+
+  text-decoration: none;
+  border-bottom: 1px solid var(--muted);
+}
+
+a.external {
+  position: relative;
+  margin-inline-end: 1em;
+}
+
+a.external::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+
+  background: var(--muted);
+
+  right: -1.1em;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+
+  mask-size: cover;
+  mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polyline points="15 3 21 3 21 9" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><line x1="10" y1="14" x2="21" y2="3" /></svg>');
+
+  -webkit-mask-size: cover;
+  -webkit-mask-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <polyline points="15 3 21 3 21 9" /><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><line x1="10" y1="14" x2="21" y2="3" /></svg>');
+}
+
+.flow>*+* {
+  margin-block-start: var(--gap, 1em);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  margin-block: 1em 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.letter-spaced {
+  letter-spacing: 0.4ch;
+}

@@ -1,0 +1,24 @@
+---
+import type { CollectionEntry } from "astro:content";
+
+interface Props {
+  project: CollectionEntry<"projects">;
+  style?: object;
+}
+
+const { project, style } = Astro.props;
+---
+
+<div class="flow" style={style}>
+  <h3>{project.data.name}</h3>
+
+  <p>&gt; {project.data.tagline}</p>
+
+  <slot />
+
+  <a href={"/projects#" + project.slug}>the making of</a>
+
+  &middot;
+
+  <a class="external" href={project.data.href}>visit project</a>
+</div>
