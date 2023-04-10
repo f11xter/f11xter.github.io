@@ -3,18 +3,17 @@ import type { CollectionEntry } from "astro:content";
 
 interface Props {
   project: CollectionEntry<"projects">;
-  style?: object;
 }
 
-const { project, style } = Astro.props;
+const { project } = Astro.props;
 ---
 
-<div class="flow" style={style}>
+<div class="flow">
   <h3>{project.data.name}</h3>
 
   <p>&gt; {project.data.tagline}</p>
 
-  <slot />
+  <p>{project.data.description}</p>
 
   <a href={"/projects#" + project.slug}>the making of</a>
 

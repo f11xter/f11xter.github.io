@@ -6,13 +6,12 @@ import { formatDate } from "@scripts/formatDate";
 interface Props {
   blog: CollectionEntry<"blog">;
   headingAs: HTMLTag;
-  style?: object;
 }
 
-const { blog, headingAs: Element, style } = Astro.props;
+const { blog, headingAs: Element } = Astro.props;
 ---
 
-<div class="flow" style={style}>
+<div class="flow">
   <Element class="heading">
     <a href={"/blog/" + blog.slug}>{blog.data.title}</a>
   </Element>
