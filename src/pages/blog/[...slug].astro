@@ -50,6 +50,13 @@ const { Content: Body, headings } = await post.render();
   pre {
     padding: 1em;
     border-radius: 0.4em;
-    background-color: var(--black) !important;
+    white-space: pre-wrap;
+    background-color: var(--grey-05) !important;
+  }
+
+  :not(pre) > code {
+    background-color: var(--code-bg);
+    padding-inline: 0.4em;
+    border-radius: 0.4em;
   }
 </style>
