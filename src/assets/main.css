@@ -37,7 +37,7 @@ body {
   color: var(--text);
   background-color: var(--bg);
 
-  font-family: "Manrope", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -101,6 +101,10 @@ h6,
   margin-block: 1em 0;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
+}
+
+h3 {
+  font-size: 1.3em;
 }
 
 .letter-spaced {
