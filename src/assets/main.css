@@ -1,21 +1,25 @@
 :root {
-  --black: hsl(0 0% 5%);
+  --grey-05: hsl(0 0% 5%);
+  --grey-20: hsl(0 0% 20%);
   --grey-30: hsl(0 0% 30%);
   --grey-70: hsl(0 0% 70%);
-  --white: hsl(0 0% 90%);
+  --grey-80: hsl(0 0% 80%);
+  --grey-90: hsl(0 0% 90%);
 
-  --bg: var(--white);
+  --bg: var(--grey-90);
   --border: var(--grey-70);
+  --code-bg: var(--grey-80);
   --muted: var(--grey-30);
-  --text: var(--black);
+  --text: var(--grey-05);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: var(--black);
+    --bg: var(--grey-05);
     --border: var(--grey-30);
+    --code-bg: var(--grey-20);
     --muted: var(--grey-70);
-    --text: var(--white);
+    --text: var(--grey-90);
   }
 }
 
