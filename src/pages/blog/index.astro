@@ -11,6 +11,6 @@ const posts = await getCollection("blog");
     <h1 class="letter-spaced">blog</h1>
     <hr />
 
-    {posts.map((post) => <BlogSummary blog={post} headingAs={"h2"} />)}
+    {posts.reverse().map((post) => <BlogSummary blog={post} headingAs={"h2"} />)}
   </main>
 </Layout>
