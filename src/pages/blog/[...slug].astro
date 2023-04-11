@@ -3,6 +3,7 @@ import { CollectionEntry, getCollection } from "astro:content";
 import Contents from "@components/Contents.astro";
 import Layout from "@layouts/Layout.astro";
 import { formatDate } from "@scripts/formatDate";
+import Socials from "@components/Socials.astro";
 
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
@@ -30,6 +31,8 @@ const { Content: Body, headings } = await post.render();
 
       <p>{formatDate(post.data.published)}</p>
 
+      <p>&gt; {post.data.excerpt}</p>
+
       {
         post.data.contents && (
           <>
@@ -42,6 +45,10 @@ const { Content: Body, headings } = await post.render();
       }
 
       <Body />
+
+      <hr />
+      <p>Got questions or comments? Let me know:</p>
+      <Socials />
     </article>
   </main>
 </Layout>
