@@ -1,6 +1,6 @@
 ---
 title: "Recursive Components for Mundane Tasks"
-excerpt: "where I create solutions to problems of my own making"
+excerpt: "in which I create solutions to problems of my own making"
 published: 2023-04-11
 contents: true
 ---
@@ -11,7 +11,7 @@ This site is built using [Astro](https://astro.build): a web framework that exce
 ```md
 ---
 title: "Recursive Components for Mundane Tasks"
-excerpt: "where I create solutions to problems of my own making"
+excerpt: "in which I create solutions to problems of my own making"
 published: 2023-04-11
 contents: true
 ---
@@ -22,7 +22,7 @@ This site is built using [Astro](https://astro.build): a web framework that exce
 
 Woah there! We're not quite ready for that much recursion yet!
 
-Markdown is great for writing content quickly and easily and Astro now has type-safe support for it. Displaying Markdown in Astro is as simple as importing the content into your component, calling a render function, and feeding it into your page. This is a simplified version of the code displaying this very page (find the source on [GitHub](https://github.com/f11xter/f11xter.github.io/tree/main/src/pages/blog/[...slug].astro)):
+Markdown is great for writing content quickly and easily and Astro now has type-safe support for it. Displaying Markdown in Astro is as simple as importing the content into your component, calling a render function, and feeding it into your page. This is a simplified version of the code displaying this very page (find the source on [GitHub](https://github.com/f11xter/f11xter.github.io/tree/main/src/pages/blog/[...slug].astro))
 
 ```astro
 ---
@@ -86,7 +86,7 @@ That's a great solution that works out of the box, but there's one catch: the ta
 
 Since the list is generated after writing, I can't add inline styles and, due to Astro's style scoping, styling it any other way would be brittle at best. I only had one option left: create my own component.
 
-## my definitely much better solution
+## my definitely-much-better solution
 This is actually my third attempt at a definitely-much-better solution, the first two requiring complicated array mapping and lots of nesting. The final product takes advantage of recursion to simplify the logic greatly.
 
 A quick note on performance: I haven't properly analysed the algorithm but my guess is it exhibits between linear and quadratic time complexity. In practice, it doesn't matter for two reasons:
@@ -133,7 +133,7 @@ const { headings } = Astro.props;
 
 This is a good start, laying out all headings at the same level, but we still need to nest them correctly.
 
-The crucial insight here is that a nested set of headings is equivalent to a full table of contents. Therefore, if we use the above code to display only the lowest level headings, we can then recurse on arrays of those that remain. 
+The crucial insight here is that a nested set of headings is equivalent to a full table of contents. Therefore, if we use the above code to display only the lowest level headings, we can then recurse on those that remain. 
 
 To do that, we'll add a `children` property to those base headings. We'll use a depth of 2 as the base case since depth 1 headings are usually the title of the document and not included.
 
