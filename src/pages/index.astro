@@ -46,6 +46,7 @@ const projects = await getCollection("projects", ({ data }) => data.featured);
 
     {
       posts
+        .reverse()
         .slice(0, 3)
         .map((post) => <BlogSummary blog={post} headingAs={"h3"} />)
     }
