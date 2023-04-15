@@ -76,7 +76,7 @@ It turns out Astro supports [remark](https://github.com/remarkjs/remark) plugins
 ## Table of contents
 * [Bravo](#bravo)
   * [Charlie](#charlie)
-* [Detla](#delta)
+* [Delta](#delta)
 ## Bravo
 ### Charlie
 ## Delta
