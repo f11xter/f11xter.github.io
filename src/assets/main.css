@@ -57,8 +57,6 @@ hr {
 }
 
 a {
-  display: inline-block;
-
   color: var(--text);
   font-weight: 500;
 

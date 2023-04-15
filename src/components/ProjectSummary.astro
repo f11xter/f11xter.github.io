@@ -15,9 +15,9 @@ const { project } = Astro.props;
 
   <p>{project.data.description}</p>
 
-  <a href={"/projects#" + project.slug}>the making of</a>
-
-  &middot;
-
-  <a class="external" href={project.data.href}>visit project</a>
+  <p>
+    <a href={"/projects#" + project.slug}>the making of</a>
+    &middot;
+    <a class="external" href={project.data.href}>visit project</a>
+  </p>
 </div>

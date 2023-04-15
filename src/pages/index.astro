@@ -39,7 +39,9 @@ const projects = await getCollection("projects", ({ data }) => data.featured);
 
     {projects.map((project) => <ProjectSummary project={project} />)}
 
-    <a href="/projects">more projects</a>
+    <p>
+      <a href="/projects">more projects</a>
+    </p>
 
     <h2 class="letter-spaced">blog</h2>
     <hr />
@@ -51,6 +53,8 @@ const projects = await getCollection("projects", ({ data }) => data.featured);
         .map((post) => <BlogSummary blog={post} headingAs={"h3"} />)
     }
 
-    <a href="/blog">more posts</a>
+    <p>
+      <a href="/blog">more posts</a>
+    </p>
   </main>
 </Layout>
