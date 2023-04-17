@@ -10,7 +10,10 @@ const posts = await getCollection("blog");
   <main class="flow">
     <h1 class="letter-spaced">blog</h1>
     <hr />
-
+    
     {posts.reverse().map((post) => <BlogSummary blog={post} headingAs={"h2"} />)}
+
+    <hr />
+    <p>Grab the <a href="/feed.xml">RSS feed</a></p>
   </main>
 </Layout>
