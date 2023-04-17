@@ -66,13 +66,13 @@ a {
 
 a.external {
   position: relative;
+  display: inline-block;
   margin-inline-end: 1em;
 }
 
 a.external::after {
   content: "";
   position: absolute;
-  display: inline-block;
 
   background: var(--muted);
 
