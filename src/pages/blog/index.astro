@@ -2,16 +2,19 @@
 import { getCollection } from "astro:content";
 import BlogSummary from "@components/BlogSummary.astro";
 import Layout from "@layouts/Layout.astro";
+import { sortPosts } from "@scripts/sortPosts";
 
 const posts = await getCollection("blog");
+
+posts.sort(sortPosts);
 ---
 
 <Layout title="blog">
   <main class="flow">
     <h1 class="letter-spaced">blog</h1>
     <hr />
-    
-    {posts.reverse().map((post) => <BlogSummary blog={post} headingAs={"h2"} />)}
+
+    {posts.map((post) => <BlogSummary blog={post} headingAs={"h2"} />)}
 
     <hr />
     <p>Grab the <a href="/feed.xml">RSS feed</a></p>

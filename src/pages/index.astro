@@ -1,13 +1,15 @@
 ---
 import { getCollection } from "astro:content";
-
 import BlogSummary from "@components/BlogSummary.astro";
 import Layout from "@layouts/Layout.astro";
 import ProjectSummary from "@components/ProjectSummary.astro";
 import Socials from "@components/Socials.astro";
+import { sortPosts } from "@scripts/sortPosts";
 
 const posts = await getCollection("blog");
 const projects = await getCollection("projects", ({ data }) => data.featured);
+
+posts.sort(sortPosts);
 ---
 
 <Layout>
@@ -45,7 +47,6 @@ const projects = await getCollection("projects", ({ data }) => data.featured);
 
     {
       posts
-        .reverse()
         .slice(0, 3)
         .map((post) => <BlogSummary blog={post} headingAs={"h3"} />)
     }
