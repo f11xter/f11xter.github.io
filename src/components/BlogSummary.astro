@@ -5,18 +5,16 @@ import { formatDate } from "@scripts/formatDate";
 
 interface Props {
   blog: CollectionEntry<"blog">;
-  headingAs: HTMLTag;
+  headingAs: "h1" | "h2" | "h3" | "h4" | "h5" | "h6";
 }
 
 const { blog, headingAs: Element } = Astro.props;
 ---
 
-<div class="flow">
-  <Element class="heading">
-    <a href={"/blog/" + blog.slug}>{blog.data.title}</a>
-  </Element>
+<Element>
+  <a href={"/blog/" + blog.slug}>{blog.data.title}</a>
+</Element>
 
-  <p>{formatDate(blog.data.published)}</p>
+<p>{formatDate(blog.data.published)}</p>
 
-  <p>&gt; {blog.data.excerpt}</p>
-</div>
+<p>&gt; {blog.data.excerpt}</p>

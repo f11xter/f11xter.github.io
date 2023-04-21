@@ -8,16 +8,14 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<div class="flow">
-  <h3>{project.data.name}</h3>
+<h3>{project.data.name}</h3>
 
-  <p>&gt; {project.data.tagline}</p>
+<p>&gt; {project.data.tagline}</p>
 
-  <p>{project.data.description}</p>
+<p>{project.data.description}</p>
 
-  <p>
-    <a href={"/projects#" + project.slug}>the making of</a>
-    &middot;
-    <a class="external" href={project.data.href}>visit project</a>
-  </p>
-</div>
+<p>
+  <a href={"/projects#" + project.slug}>the making of</a>
+  &middot;
+  <a class="external" href={project.data.href}>visit project</a>
+</p>

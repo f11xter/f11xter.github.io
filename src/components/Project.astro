@@ -10,14 +10,12 @@ const { project } = Astro.props;
 const { Content } = await project.render();
 ---
 
-<div class="flow">
-  <h2 id={project.slug}>{project.data.name}</h2>
+<h2 id={project.slug}>{project.data.name}</h2>
 
-  <p>&gt; {project.data.tagline}</p>
+<p>&gt; {project.data.tagline}</p>
 
-  <Content />
+<Content />
 
-  <p>
-    <a class="external" href={project.data.href}>visit project</a>
-  </p>
-</div>
+<p>
+  <a class="external" href={project.data.href}>visit project</a>
+</p>
