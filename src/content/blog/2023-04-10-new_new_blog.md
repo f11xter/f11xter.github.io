@@ -1,6 +1,6 @@
 ---
 title: "New New Blog!"
-excerpt: "For when the old new blog just wasn't new enough."
+excerpt: "for when the old new blog just wasn't new enough"
 published: 2023-04-10
 ---
 

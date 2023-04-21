@@ -1,8 +1,8 @@
 ---
 name: "muse"
 href: "https://f11xter.github.io/muse"
-tagline: "jornalling for the present"
-description: "Muse is a webapp for stream-of-consciousness journalling. By limiting you to 99 short lines of text, with no ability to edit, it encourages you to write exactly as you feel in the moment. Then, you can save your musings, before watching your words fade into the past."
+tagline: "free yourself of the past"
+description: "muse is a webapp for stream-of-consciousness journalling. By limiting you to 99 short lines of text, with no ability to edit, it encourages you to write exactly as you feel in the moment. Then, you can save your musings, before watching your words fade into the past."
 featured: true
 ---
 
@@ -12,4 +12,6 @@ I have found the site most useful when I'm feeling confused or disoriented. Writ
 
 The site works without signing up, allowing you to write and download musings, but an account is required to save your musings online to read later.
 
-The site is written in vanilla HTML, CSS & JS and use Firebase as an authentication backend and document NoSQL database. I opted not to use a framework for this project to aid in simplicity (despite more repeated code) and to improve my understanding of the essential tools I use. 
+The site is written in vanilla HTML, CSS & JS and use Firebase as an authentication backend and NoSQL database. I opted not to use a framework for this project to aid in simplicity (despite more repeated code) and to improve my understanding of the essential tools I use.
+
+This approach to journalling is very opinionated and not for everyone. If you like to express your emotions but don't want them to weigh you down, give *muse* a go.
