@@ -3,7 +3,6 @@ name: "website"
 href: "https://f11xter.github.io"
 tagline: "personal website and blog"
 description: "My personal website is designed to be a space where I can communicate with no distractions. Essentially a collection of text and links, it shows beauty can be found in simplicity."
-featured: true
 ---
 
 My personal website is designed to be a space where I can communicate with no distractions. Since the focus is on communication of my work and writings, I placed special emphasis on the text while designing the site.
