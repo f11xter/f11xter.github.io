@@ -3,6 +3,7 @@ title: "Recursive Components for Mundane Tasks"
 excerpt: "in which I create solutions to problems of my own making"
 published: 2023-04-11
 contents: true
+tags: ["webdev", "astro", "markdown"]
 ---
 
 ## background

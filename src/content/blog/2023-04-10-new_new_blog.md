@@ -2,13 +2,14 @@
 title: "New New Blog!"
 excerpt: "for when the old new blog just wasn't new enough"
 published: 2023-04-10
+tags: ["meta", "webdev"]
 ---
 
 Whoooo!!! It's here!!!
 
 After a great deal of work my new website is finally finished! Built with [Astro](https://astro.build) and love, I've completely nuked the old site in favour of taking the web back to its roots, where a website was just a collection of links and text.
 
-At launch, I've kept it pretty bare-bones: I've included only a couple of projects (one of which isn't *quite* released yet), a single blog post (yes I mean this one) and not only are there zero interactive elements, there are no pictures either!
+At launch, I've kept it pretty bare-bones: I've included only a couple of projects (one of which isn't _quite_ released yet), a single blog post (yes I mean this one) and not only are there zero interactive elements, there are no pictures either!
 
 Over time I'll add some playful elements and even some colour (daring, I know), or maybe I won't. Who knows?
 

@@ -18,3 +18,13 @@ const { blog, headingAs: Element } = Astro.props;
 <p>{formatDate(blog.data.published)}</p>
 
 <p>&gt; {blog.data.excerpt}</p>
+
+{
+  blog.data.tags && (
+    <p>
+      {blog.data.tags.map((x) => (
+        <span>#{x} </span>
+      ))}
+    </p>
+  )
+}
