@@ -2,7 +2,7 @@
 import "@assets/main.css";
 
 interface Props {
-	title?: string;
+  title?: string;
 }
 
 const { title } = Astro.props;
@@ -10,47 +10,66 @@ const { title } = Astro.props;
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>felix waller{title && " · " + title}</title>
+  <head>
+    <title>felix waller{title && " · " + title}</title>
+    <meta
+      property="og:title"
+      content={"felix waller" + (title ? " · " + title : "")}
+    />
 
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap"
-			rel="stylesheet"
-		/>
-	</head>
+    <meta name="author" content="Felix Waller" />
+    <meta name="description" content="Website of a programmer and musician." />
+    <meta
+      property="og:description"
+      content="Website of a programmer and musician."
+    />
 
-	<body>
-		<header class="flow">
-			<p
-				class="heading letter-spaced"
-				style={{
-					display: "flex",
-					alignItems: "center",
-					fontSize: "2.5em",
-					lineHeight: "1",
-					marginBlockStart: "0",
-				}}
-			>
-				<span style={{ fontSize: "2.5em", fontWeight: "100" }}>f</span>
-				<span style={{ fontWeight: "300" }}>elix waller</span>
-			</p>
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={Astro.url} />
 
-			<p>programmer & musician</p>
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:image:alt" content="felix waller" />
 
-			<nav aria-label="site navigation">
-				<a href="/">home</a> &middot;
-				<a href="/projects/">projects</a> &middot;
-				<a href="/blog/">blog</a>
-			</nav>
-		</header>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-		<slot />
-	</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="flow">
+      <p
+        class="heading letter-spaced"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          fontSize: "2.5em",
+          lineHeight: "1",
+          marginBlockStart: "0",
+        }}
+      >
+        <span style={{ fontSize: "2.5em", fontWeight: "100" }}>f</span>
+        <span style={{ fontWeight: "300" }}>elix waller</span>
+      </p>
+
+      <p>programmer & musician</p>
+
+      <nav aria-label="site navigation">
+        <a href="/">home</a> &middot;
+        <a href="/projects/">projects</a> &middot;
+        <a href="/blog/">blog</a>
+      </nav>
+    </header>
+
+    <slot />
+  </body>
 </html>
